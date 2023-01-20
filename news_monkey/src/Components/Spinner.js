@@ -1,9 +1,9 @@
 import React from 'react'
-import loading from "./../loading.gif"
+import loading from "./../load.gif"
 export default function Spinner() {
   return (
-    <div>
-        <img src={loading} alt="Loading..." />
+    <div style={{ display: "flex", justifyContent: "center", marginTop:"50px" }} >
+      <img src={loading} alt="Loading..."  />
     </div>
   )
 }
