@@ -6,9 +6,9 @@ export class Navbar extends Component {
   render() {
     return (
       <div >
-        <nav className="navbar navbar-expand-lg navbar-dark " id="fixed-top" style={{  backgroundColor: "green",borderRadius:"20px", boxShadow:"3px 5px lightgreen" , margin:"5px" }} >
+        <nav className="navbar navbar-expand-lg navbar-dark " id="fixed-top" style={{  backgroundColor: "green",borderRadius:"20px", boxShadow:"3px 5px white" , margin:"5px" }} >
           <div className="container-fluid">
-            <Link className="navbar-brand" to="/">Samachar</Link>
+            <Link className="navbar-brand" to="/">HEADLINES</Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
