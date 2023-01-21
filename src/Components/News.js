@@ -80,8 +80,9 @@ export default class News extends Component {
   }
   render() {
     return (
-      <>
-        <h2 className="text-center" style={{ margin: "20px", backgroundColor: "red", borderRadius: "10px", color: "white", boxShadow: "3px 5px lightgrey" }}>Top {this.makeCapitalFirstLetter(this.props.category)} Headlines</h2>
+      <div style={{background: this.props.backgroundColor}}>
+        
+        <h2 className="text-center " style={{ margin: "58.7px 20px 0px 20px", backgroundColor: "red", borderRadius: "10px", color: "white",padding:"3px 0px 3px 0px", boxShadow: "2px 2px  lightgrey" }}>Top {this.makeCapitalFirstLetter(this.props.category)} Headlines</h2>
         {this.state.loading && <Spinner />}
         <InfiniteScroll
           dataLength={this.state.articles.length}
@@ -104,7 +105,7 @@ export default class News extends Component {
             <button disabled={this.state.page <= 1} type="button" className="btn btn-primary" onClick={this.handlePrevious}>&larr; Previous</button>
             <button disabled={this.state.page + 1 > Math.ceil(this.state.totalResults / this.props.pageSize)} type="button" className="btn btn-primary" onClick={this.handleNext}>Next &rarr;</button>
           </div> */}
-      </>
+      </div>
     );
   }
 }

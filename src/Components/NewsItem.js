@@ -15,7 +15,7 @@ export class NewsItem extends Component {
             </span></h5>
             <p className="card-text">{descreption}</p>
             <p className="card-text"><small className='text-success'><i>By <b>{author ? author : "Unkown"}</b> on {new Date(date).toDateString()}</i></small></p>
-            <a href={newsUrl} target="_blank" rel='noopener noreferrer' className="btn btn-sm btn-primary">Read More...</a>
+            <a href={newsUrl} target="_blank" rel='noopener noreferrer' className="btn btn-sm btn-dark">Read More...</a>
           </div>
         </div>
       </div>
