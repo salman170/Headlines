@@ -6,7 +6,7 @@ export class Navbar extends Component {
   render() {
     return (
       <div >
-        <nav className="navbar navbar-expand-lg navbar-dark " id="fixed-top" style={{  backgroundColor: "green",borderRadius:"10px", boxShadow:"3px 5px white" , margin:"3px" }} >
+        <nav className="navbar fixed-top navbar-expand-lg navbar-dark " id="fixed-top" style={{  backgroundColor: "green",borderRadius:"10px", boxShadow:"3px 5px white"  }} >
           <div className="container-fluid">
             <Link className="navbar-brand" to="/">HEADLINES</Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

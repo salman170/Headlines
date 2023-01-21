@@ -67,9 +67,6 @@ export default class News extends Component {
   fetchMoreData = async () => {
     const { country, category, pageSize, apiKey } = this.props
     this.setState({ page: this.state.page + 1 })
-    console.log(this.state.articles.length)
-    console.log(this.state.totalResults)
-    console.log(this.state.articles.length <= this.state.totalResults)
 
     let url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}&page=${this.state.page}&pageSize=${pageSize}`
     // this.setState({ loading: true })
