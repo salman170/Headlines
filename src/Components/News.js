@@ -80,9 +80,11 @@ export default class News extends Component {
   }
   render() {
     return (
-      <div style={{background: this.props.backgroundColor}}>
-        
-        <h2 className="text-center " style={{ margin: "58.7px 20px 0px 20px", backgroundColor: "red", borderRadius: "10px", color: "white",padding:"3px 0px 3px 0px", boxShadow: "2px 2px  lightgrey" }}>Top {this.makeCapitalFirstLetter(this.props.category)} Headlines</h2>
+      <div style={{backgroundImage: `url(${this.props.backgroundColor})`,opacity:"0.3px"}}>
+        <br />
+        <br />
+        <br />
+        <h2 className="text-center " style={{ margin: "0px 20px 0px 20px", backgroundColor: "red", borderRadius: "10px", color: "white",padding:"3px 0px 3px 0px", boxShadow: "2px 2px  lightgrey" }}>Top {this.makeCapitalFirstLetter(this.props.category)} Headlines</h2>
         {this.state.loading && <Spinner />}
         <InfiniteScroll
           dataLength={this.state.articles.length}

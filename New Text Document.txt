@@ -1,0 +1,18 @@
+599109608c4545bcacd60d824290bf90
+
+lfdncxdmwfzqugtzcl@tmmwj.com
+
+iehztakzihsmrdmdoe@tmmcv.com
+dc124909d5bb4701b5dcf8975aff2be8
+
+
+Pass@1234
+
+
+
+md-4 mdium devices mai 4 column lay laygi
+
+btn - sm
+
+constructor will run when class object will be created and to make constructor we need super() inside constructor
+Props are read only

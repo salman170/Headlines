@@ -10,7 +10,7 @@ export class NewsItem extends Component {
         <div className="card" >
           <img src={imageUrl ? imageUrl : "https://static.independent.co.uk/2022/12/16/16/nuclear%20fusion%20power%20plant.jpg?quality=75&width=1200&auto=webp"} className="card-img-top" alt="..." />
           <div className="card-body">
-            <h5 className="card-title">{title}<span className="position-absolute top-0 start-0  badge rounded-pill bg-danger" style={{ zIndex:"1"}}>
+            <h5 className="card-title">{title}<span className="position-absolute top-0 start-0  badge rounded-pill bg-danger" style={{ zIndex: "1" }}>
               {source}
             </span></h5>
             <p className="card-text">{descreption}</p>

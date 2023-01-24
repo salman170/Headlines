@@ -5,14 +5,15 @@ import { Link } from 'react-router-dom'
 export default function Navbar() {
   return (
     <div >
-      <nav className="navbar fixed-top navbar-expand-lg navbar-dark " id="fixed-top" style={{ backgroundColor: "black",height:"10%" }} >
+      <nav className="navbar fixed-top navbar-expand-lg navbar-dark " id="fixed-top" style={{ backgroundColor: "black", borderRadius:"25px" }} >
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">HEADLINES</Link>
+          
+          <Link className="navbar-brand" to="/"><i className="fa fa-globe" style={{fontSize:"24px"}} ></i> HEADLINES</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0" >
               <li className="nav-item"><Link className="nav-link" aria-current="page" to="/">Home</Link></li>
               <li className="nav-item"><Link className="nav-link" to="/business">Business</Link></li>
               <li className="nav-item"><Link className="nav-link" to="/health">Health</Link></li>
